@@ -10,7 +10,7 @@ in stdenv.mkDerivation rec {
   name = "dtn7-presentation";
   src = lib.cleanSource ./presentation;
 
-  nativeBuildInputs = [ texliveComb ];
+  nativeBuildInputs = [ inkscape texliveComb ];
 
   installPhase = "cp presentation.pdf $out";
 }
