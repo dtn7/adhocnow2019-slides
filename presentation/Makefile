@@ -6,4 +6,5 @@ all:
 
 .PHONY: clean
 clean:
-	rm *.aux *.log *.nav *.out *.snm *.toc $(PRESENTATION).pdf
+	find -regex '.*\.\(aux\|log\|nav\|out\|snm\|toc\)$ ' -delete
+	rm $(PRESENTATION).pdf

@@ -4,7 +4,7 @@ let
   texliveComb = texlive.combine {
     inherit (texlive)
       scheme-medium
-      beamer;
+      acronym beamer bigfoot xstring;
   };
 in stdenv.mkDerivation rec {
   name = "dtn7-presentation";

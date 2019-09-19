@@ -1,5 +1,9 @@
 \documentclass{beamer}
 
+\usepackage[nolist,nohyperlinks]{acronym}
+
+\include{include/acronyms}
+
 \usetheme{default}
 \usecolortheme{dove}
 \beamertemplatenavigationsymbolsempty
@@ -12,6 +16,7 @@
 \titlegraphic{\includegraphics{include/umr-logo}}
 
 \begin{document}
+
 \begin{frame}
   \titlepage
 \end{frame}
@@ -21,10 +26,5 @@
 %   \tableofcontents
 % \end{frame}
 
-\section{Foo}
-\begin{frame}
-  \frametitle{Bar}
-
-  uff.
-\end{frame}
+\include{slides/01_dtn}
 \end{document}
