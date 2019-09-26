@@ -1,3 +1,4 @@
 *.pdf
 
 !nodes-endpoints.pdf
+!dtn7-architecture.pdf
