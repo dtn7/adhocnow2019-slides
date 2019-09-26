@@ -28,3 +28,49 @@
     \includegraphics[width=0.6\linewidth,keepaspectratio]{include/nodes-endpoints}
   \end{figure}
 \end{frame}
+
+\subsection{Bundles and Blocks}
+
+\begin{frame}
+  \frametitle{Bundles and Blocks}
+
+  \begin{itemize}
+  \item \acs{BP7} packets are called Bundles
+  \item A Bundle is a sequence of Blocks
+  \end{itemize}
+
+  \begin{figure}
+    \resizebox{\textwidth}{!}{
+    \begin{tikzpicture}
+    \begin{umlpackage}[fill=white]{Bundle}
+      \umlclass[rectangle split parts=2, fill=white]{Primary Block}{
+        Version: \texttt{7} \\
+        Control Flags: \\
+          \quad \textit{Status requested for reception} \\
+        CRC Type: \textit{CRC32} \\
+        Destination EID: \texttt{dtn:sink/lux} \\
+        Source node EID: \texttt{dtn:b2/lux} \\
+        Report-to EID: \texttt{dtn:b2/lux} \\
+        Creation Timestamp: (\texttt{0}, \texttt{23}) \\
+        Lifetime: \textit{3600000} \\
+        CRC Value: \texttt{67 75 6D 6F}
+      }{}
+      \umlclass[rectangle split parts=2, fill=white, x=4.75, y=1.054]{Hop Count Block}{
+        Type Code: \texttt{9} \\
+        Number: \texttt{2} \\
+        Control Flags: \textit{None} \\
+        CRC Type: \textit{None} \\
+        Data: (\texttt{64}, \texttt{42})
+      }{}
+      \umlclass[rectangle split parts=2, fill=white, x=8.6, y=1.054]{Payload Block}{
+        Type Code: \texttt{1} \\
+        Number: \texttt{1} \\
+        Control Flags: \textit{None} \\
+        CRC Type: \textit{None} \\
+        Data: \texttt{0E C6}
+      }{}
+    \end{umlpackage}
+    \end{tikzpicture}
+    }
+\end{figure}
+\end{frame}
