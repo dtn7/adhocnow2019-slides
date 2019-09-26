@@ -1,1 +1,3 @@
 *.pdf
+
+!nodes-endpoints.pdf
