@@ -12,6 +12,33 @@
   \end{itemize}
 \end{frame}
 
+\subsection{DTN7 Programs}
+
+\begin{frame}[fragile]
+  \frametitle{DTN7 Programs}
+
+  \begin{itemize}
+  \item \texttt{dtnd}: \acs{DTN} daemon
+  \item \texttt{dtncat}: command line tool
+  \end{itemize}
+
+  \begin{figure}
+    \lstset{
+      basicstyle=\ttfamily\scriptsize,
+      commentstyle=\color{gray},
+      language=sh,
+    }
+
+    \begin{lstlisting}
+# Sending a Bundle
+$ dtncat send http://localhost:8080/ dtn:sink/lux <<< "3782 lx"
+
+# Retrieving a received Bundle
+$ dtncat fetch http://localhost:8080/
+    \end{lstlisting}
+  \end{figure}
+\end{frame}
+
 \subsection{DTN7 Architecture}
 
 \begin{frame}
