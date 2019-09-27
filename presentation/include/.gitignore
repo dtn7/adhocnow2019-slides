@@ -1,4 +1,6 @@
 *.pdf
 
-!nodes-endpoints.pdf
+!chain-runtimes-2.pdf
+!chain-runtimes-64.pdf
 !dtn7-architecture.pdf
+!nodes-endpoints.pdf
