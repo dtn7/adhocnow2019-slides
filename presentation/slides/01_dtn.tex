@@ -6,19 +6,21 @@
   \begin{columns}
   \column{0.6\textwidth}
   \begin{itemize}
+  \item Situations without a reliable uplink
+    \begin{itemize}
+    \item Environmental monitoring in remote areas
+    \item Destroyed telecommunication infrastructure
+    \item Internet access is blocked
+    \end{itemize}
+
+  \onslide<3->{
   \item In \acs{DTN}, data is transmitted in a store-carry-forward fashion
     \begin{itemize}
     \item Hop-by-hop transport
     \item Opportunistic or scheduled contacts to neighbors
     \item Allows large time window between two transmissions
     \end{itemize}
-
-  \item Useful if there is no reliable connection
-    \begin{itemize}
-    \item Environmental monitoring in remote areas
-    \item Destroyed telecommunication infrastructure
-    \item Internet access is blocked
-    \end{itemize}
+  }
   \end{itemize}
 
   \column{0.4\textwidth}
@@ -28,7 +30,6 @@
     \includegraphics<2>[width=\linewidth,height=\textheight,keepaspectratio]{include/dtn-example-1}
     \includegraphics<3>[width=\linewidth,height=\textheight,keepaspectratio]{include/dtn-example-2}
     \includegraphics<4>[width=\linewidth,height=\textheight,keepaspectratio]{include/dtn-example-3}
-    \includegraphics<5>[width=\linewidth,height=\textheight,keepaspectratio]{include/dtn-example-4}
   \end{textblock*}
 \end{frame}
 
