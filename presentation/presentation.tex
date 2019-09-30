@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[usenames,dvipsnames]{beamer}
 
 \usepackage[nolist,nohyperlinks]{acronym}
 \usepackage{color}
@@ -6,6 +6,7 @@
 \usepackage[absolute,overlay]{textpos}
 \usepackage{tikz}
 \usepackage{tikz-uml}
+\usepackage{xcolor}
 
 \usetikzlibrary{decorations.pathreplacing}
 
@@ -17,6 +18,8 @@
     \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}}
   },
 }
+
+\definecolor{mygreen}{HTML}{95cf95}
 
 \include{include/acronyms}
 
