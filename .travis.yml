@@ -1,0 +1,7 @@
+language: nix
+
+git:
+  depth: 1
+
+script:
+  - nix-build
