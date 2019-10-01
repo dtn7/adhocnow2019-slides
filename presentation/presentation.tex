@@ -25,7 +25,17 @@
 
 \usetheme{default}
 \usecolortheme{dove}
+
 \beamertemplatenavigationsymbolsempty
+
+\setbeamerfont{page number in head/foot}{size=\large}
+\setbeamertemplate{footline}{
+  \hfill
+  \usebeamercolor[fg]{page number in head/foot}
+  \usebeamerfont{page number in head/foot}
+  \setbeamertemplate{page number in head/foot}[framenumber]
+  \usebeamertemplate*{page number in head/foot}\kern1em\vskip2pt
+}
 
 \title{DTN7}
 \subtitle{An Open-Source Disruption-tolerant Networking Implementation of Bundle Protocol 7}
@@ -39,7 +49,7 @@
 
 \begin{document}
 
-\begin{frame}
+\begin{frame}[noframenumbering,plain]
   \titlepage
 \end{frame}
 
